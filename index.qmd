@@ -8,7 +8,7 @@ format:
     revealjs:
         theme: [default, diataxis-light.scss]
         logo: img/logo_niu_light.png
-        footer: "NIU team meeting | 2023-10-17"
+        footer: "NIU team meeting | 2023-10-18"
         slide-number: c
         menu:
             numbers: true
@@ -92,7 +92,7 @@ source: [diataxis.fr/compass](https://diataxis.fr/compass/)
 source: [diataxis.fr/tutorials](https://diataxis.fr/tutorials/)
 :::
 
-## Turorial DOs & DONT's
+## Tutorial DOs & DONT's
 
 :::: {.columns}
 
