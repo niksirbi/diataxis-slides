@@ -51,18 +51,17 @@ my-custom-stuff:
 > The Grand Unified Theory of Documentation
 :::
 
-## The two axes {.smaller}
+## The two axes
 
-- is __practical__ vs __theoretical__
-- serves __study__ vs __work__
+_practical_ vs _theoretical_ | _study_ vs _work_
 
 ::: {.fragment}
-| If the content describes... | ...and serves the user's... | ...then it must belong to... |
-|-----------------------------|-----------------------------|------------------------------|
-| practical steps             | study                       | a tutorial                   |
-| practical steps             | work                        | a how-to guide               |
-| theoretical knowledge       | work                        | reference                    |
-| theoretical knowledge       | study                       | explanation                  |
+| content | serves the user's | then it must be in a |
+|---|---|---|
+| _practical_   | _study_  | __tutorial__     |
+| _practical_   | _work_   | __how-to guide__ |
+| _theoretical_ | _work_   | __reference__    |
+| _theoretical_ | _study_  | __explanation__  |
 :::
 
 ::: aside
@@ -73,68 +72,101 @@ source: [diataxis.fr/compass](https://diataxis.fr/compass/)
 
 :::: {.columns}
 
-::: {.column width=50%}
+::: {.column width=45%}
 ![](img/overview-tutorials.png)
 :::
 
-::: {.column width=50%}
+::: {.column width=55%}
 > Tutorials are __lessons__ that take the reader by the hand through a series of steps to complete a project of some kind. Tutorials are __learning-oriented__.
 :::
 
 ::::
 
+::: {.fragment}
+*__Analogy:__ teaching a child to cook*
+
+*__Alt names:__ Tutorial, Getting Started, Walkthrough, Quickstart*
+:::
+
 ::: aside
 source: [diataxis.fr/tutorials](https://diataxis.fr/tutorials/)
 :::
 
-## What makes a good tutorial {.smaller}
+## Turorial DOs & DONT's
 
-*__Analogy:__ teaching a child to cook*
+:::: {.columns}
 
+::: {.column width=60% .fragment}
+__DO__
+ 
 - focus on learning by doing
-- the goals is to get the user started
 - tell the learner what they will learn
 - ensure reliability and repeatability
 - give immediate results
-
-::: {.fragment}
-*__Minimize:__ abstractions, explanations, alternatives*
 :::
+
+::: {.column width=40% .fragment}
+
+__AVOID__ 
+
+- abstractions
+- explanations
+- discussing alternatives
+:::
+
+:::: 
 
 ::: aside
 source: [diataxis.fr/tutorials](https://diataxis.fr/tutorials/)
 :::
+
 
 ## How-to guides
 
 :::: {.columns}
 
-::: {.column width=50%}
+::: {.column width=45%}
 ![](img/overview-how-to.png)
 :::
 
-::: {.column width=50%}
+::: {.column width=55%}
 > How-to guides are __directions__ that take the reader through the steps required to solve a real-world problem. How-to guides are __goal-oriented__.
 :::
 
 ::::
 
+::: {.fragment}
+*__Analogy:__ recipes or SOPs*
+
+*__Alt names:__ Recipes, Examples*
+:::
+
 ::: aside
 source: [diataxis.fr/how-to-guides](https://diataxis.fr/how-to-guides/)
 :::
 
-## What makes a good how-to guide {.smaller}
+## How-to DOs & DONT's
 
-*__Analogy:__ recipes or SOPs*
+:::: {.columns}
 
+::: {.column width=60% .fragment}
+__DO__
+ 
 - a sequence of actions
 - solves a specific problem
 - flexible enough to be adapted
-
-
-::: {.fragment}
-*__Minimize:__ teaching, explanations, digressions*
 :::
+
+::: {.column width=40% .fragment}
+
+__AVOID__ 
+
+- teaching
+- explanations
+- digressions
+:::
+
+:::: 
 
 ::: aside
 source: [diataxis.fr/how-to-guides](https://diataxis.fr/how-to-guides/)
@@ -144,91 +176,116 @@ source: [diataxis.fr/how-to-guides](https://diataxis.fr/how-to-guides/)
 
 :::: {.columns}
 
-::: {.column width=50%}
+::: {.column width=45%}
 ![](img/overview-reference.png)
 :::
 
-::: {.column width=50%}
+::: {.column width=55%}
 > Reference guides are __technical descriptions__ of the machinery and how to operate it. Reference material is __information-oriented__.
 :::
 
 ::::
 
+::: {.fragment}
+*__Analogy:__ encyclopedic entries*
+
+*__Alt names:__ API reference/index, CLI reference/index*
+:::
+
 ::: aside
 source: [diataxis.fr/reference](https://diataxis.fr/reference/)
 :::
 
-## What makes a good reference {.smaller}
+## Reference DO's & DONT's
 
-*__Analogy:__ encyclopedic entries, API index (docstrings)*
+:::: {.columns}
 
-- reflects the structure of the machinery
-- consistency
-- accuracy
-- contains examples
+::: {.column width=60% .fragment}
+__DO__
+ 
+- reflect the code structure
+- consistent and accurate
+- include examples
 - austere and objective style
+:::
+
+::: {.column width=40% .fragment}
+
+__AVOID__ 
+
+- discussions
+- explanations
+- speculations
+:::
+
+:::: 
+
+::: aside
+source: [diataxis.fr/reference](https://diataxis.fr/reference/)
+:::
+
+
+## Explanations
+
+:::: {.columns}
+
+::: {.column width=45%}
+![](img/overview-explanation.png)
+:::
+
+::: {.column width=55%}
+> Explanation is __discussion__ that clarifies and illuminates a particular topic. Explanation is __understanding-oriented__.
+:::
+
+::::
 
 ::: {.fragment}
-*__Minimize:__ discussions, explanations, speculations*
+*__Analogy:__ a book on the history of cooking*
+
+*__Alt names:__ Discussion, Background, Topics, Conceptual guides*
 :::
 
 ::: aside
-source: [diataxis.fr/reference](https://diataxis.fr/reference/)
+source: [diataxis.fr/explanation](https://diataxis.fr/explanation/)
 :::
 
-## Just a code block, nothing gets executed...
+## Explanation DO's & DONT's
 
-... but there is some fancy highlighting
+:::: {.columns}
 
-```{.python code-line-numbers="1|3|4-9"}
-from pathlib import Path
+::: {.column width=60% .fragment}
+__DO__
+ 
+- tell history
+- provide context and connections
+- talk *about* the topic
+- alternatives and opinions
+- reasons and justifications
+:::
 
-home_path = Path.home()
-if home_path.exists():
-  data_path = home_path / "data"
-else:
-  pass
-  # raise some error maybe?
-```
+::: {.column width=40% .fragment}
 
-## A code block that's actually executed at render-time
+__AVOID__ 
 
-```{python}
-#| echo: true
-#| code-fold: true
+- instruct
+- provide technical reference 
+:::
 
-from pathlib import Path
+:::: 
 
-print("Hello world")
-```
+::: aside
+source: [diataxis.fr/explanation](https://diataxis.fr/explanation/)
+:::
 
-## You can execute code without showing that you have by using #|echo: false
-```{python}
-#| echo: false
-
-from pathlib import Path
-
-print("Hello world")
-```
-
-{{< include slides/extra_slide.qmd >}}
-
-## An example image
-
-Include an image:
-
-![](img/bg_logo_wide.png){width=900 fig-align=center}
-
-
-## Link and a preview a webpage:
+## Tutorials vs How-to guides
 
 ::: {style="text-align: center; margin-top: 1em"}
-[interoperable Python-based tools for computational neuroanatomy](https://brainglobe.info/index.html){preview-link="true" style="text-align: center"}
+[Understanding the distinction](https://diataxis.fr/tutorials-how-to/#understanding-the-distinction){preview-link="true"}
 :::
 
-## Use a variable several times
+## Case studies
 
-Variables defined in the metadata is re-useable anywhere
-
-* {{< meta my-custom-stuff.my-reuseable-variable >}}
-* {{< meta my-custom-stuff.my-reuseable-variable >}}
+- [brainglobe.info](https://brainglobe.info/){preview-link="true"}
+- [neuroblueprint.neuroinformatics.dev](https://neuroblueprint.neuroinformatics.dev/){preview-link="true"}
+- [howto.neuroinformatics.dev](https://howto.neuroinformatics.dev/index.html){preview-link="true"}
+- [movement.neuroinformatics.dev](https://movement.neuroinformatics.dev/){preview-link="true"}
